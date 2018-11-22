@@ -1,0 +1,129 @@
+.choose-floor {
+    .hero__container {
+        z-index: 3;
+    }
+    .page-heading {
+        position: relative;
+        z-index: 2;
+    }
+    .footer {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.page-breadcrumbs_choose-floor {
+    position: relative;
+    z-index: 2;
+}
+
+
+.choose-floor__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.choose-floor__action-text {
+    padding: 9px 15px 8px 15px;
+    background-color: #fff;
+    color: $purple;
+}
+
+.choose-floor__arrow-down {
+    display: inline-block;
+    border-left: 1px solid $purple;
+    border-bottom: 1px solid $purple;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    margin: 0 0 2px 5px;
+}
+
+.choose-floor_btn {
+    border-color: $blue;
+    color: $blue;
+}
+
+
+.choose-floor__floor {
+    fill: transparent;
+    transition: fill .5s;
+    &:hover {
+        cursor: pointer;
+        fill: rgba($blue, 0.9);
+    }
+}
+
+// tooltip start
+.choose-floor__tooltip {
+    position: absolute;
+    transition: opacity .4s;
+}
+
+.tooltip__top,
+.tooltip__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tooltip__number {
+    width: 34px;
+    height: 34px;
+    background-color: $orange;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+.tooltip__text {
+    background-color: $blue;
+    padding-left: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    max-width: 75px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.tooltip__text_svg {
+    fill: #fff;
+    font-size: 6px;
+    text-transform: uppercase;
+}
+
+// tooltip end
+
+.choose-floor__svg {
+    width: 100%;
+    position: relative;
+}
+
+.svg_orange_rect {
+    width: 20;
+    height: 20;
+}
+
+.choose-floor__house-number-text {
+    fill: #fff;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.choose-floor__house-number-polygon_1 {
+    fill: $purple;
+}
+
+.choose-floor__house-number-polygon_2 {
+    fill: $blue;
+}
+
+.choose-floor__house-number-polygon_3 {
+    fill: $orange;
+}

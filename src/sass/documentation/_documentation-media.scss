@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px) {
+    .document {
+        width: 22%;
+        margin-bottom: 20px;
+    }
+    .documentation_list {
+        justify-content: space-around;
+        margin-bottom: -100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .document {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .document {
+        width: 45%;
+    }
+}

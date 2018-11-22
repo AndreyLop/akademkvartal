@@ -1,0 +1,193 @@
+.repair__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.repair__item {
+    width: 48%;
+    margin-bottom: 50px;
+}
+.repair__repair {
+    width: 100%;
+    height: 194px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.repair__text {
+    padding: 22px 0 10px 26px;
+}
+
+.repair__name {
+    color: $blue;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.repair__date {
+    font-size: 0.785rem;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+
+.repair__repair_1{background-image: url('../img/repair/kitchens/kitchen_11.jpg');}
+.repair__repair_2{background-image: url('../img/repair/living/living_12.jpg');}
+.repair__repair_3{background-image: url('../img/repair/bathroom/bathroom_1.jpg');}
+.repair__repair_4{background-image: url('../img/repair/repair_item_img_4.png');}
+.repair__repair_5{background-image: url('../img/repair/repair_item_img_5.png');}
+.repair__repair_6{background-image: url('../img/repair/repair_item_img_6.png');}
+.repair__repair_7{background-image: url('../img/repair/repair_item_img_7.png');}
+.repair__repair_8{background-image: url('../img/repair/repair_item_img_8.png');}
+
+.repair__overlay {
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(#b90070, 0.5); 
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.repair__item {
+    &:hover {
+        cursor: pointer;
+        .repair__overlay {
+            opacity: 1;
+        }
+    }
+}
+
+.repair__gallery-items {
+    display: none;
+}
+
+// modal window
+.repair__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($blue, 0.9);
+    z-index: 11;
+    display: none;
+
+    &.repair__modal_open {
+        display: block;
+        overflow: auto;    
+    }
+}
+
+
+.gallery__main {
+    .repair__gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 40px;
+        text-align: center;
+        img {
+            margin: 0 auto;
+            max-width: 900px;
+            max-height: 600px;
+            width: auto !important;
+            // position: absolute;
+            // top: -9999px;
+            // right: -9999px;
+            // bottom: -9999px;
+            // left: -9999px;
+            // margin: auto;
+            // min-width: 100%;
+            // min-height: 100%;
+        }
+    }
+}
+
+.gallery__nav {
+    .repair__gallery-item {
+        width: 100%;
+        max-width: 118px;
+        height: 60px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-right: 20px;
+        img {
+            position: absolute;
+            top: -9999px;
+            right: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            margin: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+}
+
+.repair__gallery-close-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: $orange;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.repair {
+    .gallery__name_repair {
+        background-color: $orange;
+    }
+    .gallery__container {
+        min-height: 700px;
+        height: auto;
+        overflow: initial;
+
+    }
+    .gallery__nav-container {
+        background-color: $orange;
+    }
+    .repair__gallery-item {
+        border-radius: 20px;
+        img {
+            position: static;
+            width: 100%;
+        }
+    }
+}
+
+
+.gallery__main-arrow_repair {
+    fill: #fff;
+}
+
+.repair__people {
+    position: relative;
+}
+
+.repair__family {
+    position: absolute;
+    top: 20px;
+}
+
+.repair__family_1 {
+    left: 20%;
+}
+
+.repair__family_2 {
+    right: 20%;
+}

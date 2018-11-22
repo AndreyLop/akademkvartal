@@ -1,0 +1,102 @@
+.about-complex__paragraph_1 {
+    color: $blue;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    line-height: 30px;
+    letter-spacing: 0.45px;
+}
+
+.about-complex__paragraph_2 {
+    color: $grey;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    margin-top: 35px;
+    padding: 0 5px;
+}
+
+.about-complex__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-complex__block_1 {
+    margin-top: -50px;
+    .about-complex__block_text {
+        max-width: 830px;
+        text-align: justify;
+        padding-right: 20px;
+    }
+}
+
+.about-complex__block_2 {
+    margin-bottom: 65px;
+    .about-complex__block_text {
+        max-width: 695px;
+        text-align: justify;
+    }
+}
+
+.about-complex__block_3 {
+    margin-bottom: 65px;
+    .about-complex__block_text {
+        max-width: 615px;
+        text-align: justify;
+    }
+}
+
+.about-complex__block_4 {
+    margin-bottom: 65px;
+    .about-complex__block_text {
+        max-width: 530px;
+        text-align: justify;
+    }
+}
+
+// animations
+.about-complex__block {
+    max-width: 1180px;
+    overflow: hidden;
+
+    .about-complex__block_text {
+        transition: all 1s;
+    }
+    .about-complex__image {
+        transition: all 1s .5s;
+    }
+}
+
+.animate {
+    &.about-complex__block {
+        .about-complex__block_text {
+            opacity: 0;
+        }
+        .about-complex__image {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+    }
+    &.about-complex__block_1 {
+        .about-complex__block_text {
+            transform: translateX(-200px);
+        }
+    }
+    &.about-complex__block_2 {
+        .about-complex__block_text {
+            transform: translateX(200px);
+        }
+    }
+    &.about-complex__block_3 {
+        .about-complex__block_text {
+            transform: translateX(-200px);
+        }
+    }
+    &.about-complex__block_4 {
+        .about-complex__block_text {
+            transform: translateX(200px);
+        }
+    }
+}

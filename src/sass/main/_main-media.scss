@@ -1,0 +1,231 @@
+@media screen and (max-width: 1900px) {
+    .hero_heading {
+        font-size: 2.5rem;
+        top: 215px;
+    }
+}
+
+// To make svg semi adaptable;
+@media screen and (max-width: 1024px) {
+    .main-page-hero-svg-container {
+        position: relative;
+        height: 700px;
+        overflow: hidden;
+        svg {
+            position: absolute;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .hero__intergal-logo {
+        img {
+            width: 127px;
+        }
+    }
+
+    // about info
+    .main-info__subheading {
+        font-size: 2.375rem;
+    }
+
+    .main-about-complex_image {
+        padding: 0 60px 60px 30px;
+        img {
+            max-width: 260px;
+        }
+    }
+
+    .main-info__text_apartments {
+        max-width: 270px;
+    }
+
+    .main-apartments_image {
+        padding: 0 40px 15px 60px;
+        background-position: center;
+        img {
+            max-width: 315px;
+        }
+    }
+
+
+    .main-info__text_infrastructure {
+        max-width: 300px
+    }
+
+    .main-infrastructure_image {
+        background-position: center;
+        img {
+            max-width: 400px;
+        }
+    }
+
+    // news
+
+    .news__item {
+        width: 48%;
+    }
+    .main-news {
+        .news__item {
+            margin-bottom: 20px;
+        }
+    }
+    .main-news__item_3 {
+        display: none;
+    }
+
+    // contacts
+    .main-contacts__heading {
+        margin-bottom: 20px;
+    }
+    .contacts__form {
+        min-width: 385px;
+        padding: 130px 10px 130px 10px;
+        background-image: url('../img/main/form_bg_tablet.png');
+    }
+    .main-contacts__gyro {
+        max-width: 110px;
+        top: -165px;
+    }
+    .main-contacts__bycicle {
+        max-width: 265px;
+        left: 10%;
+        bottom: -65px;
+    }
+    .main-contacts__container {
+        margin-bottom: -100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-page-hero-svg-container {
+        position: relative;
+        height: 420px;
+        svg {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+    .hero-mobile {
+        display: block;
+    }
+    .hero__intergal-logo {
+        top: 64%;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            width: 140px;
+        }
+    }
+    // info
+    .main-info__slogan {
+        margin-bottom: 20px;
+    }
+    .main-info__btn {
+        .btn {
+            width: 100%;
+        }
+    }
+    .main-about-complex {
+        .main-about-complex_image {
+            padding: 0 0px 5px 5px;
+        }
+        .main-info {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .main-apartments {
+        margin-top: 50px;
+        .main-apartments_image {
+            padding: 0 0px 5px 5px;
+        }
+        .main-info {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+    .main-infrastructure {
+        margin-top: 50px;
+        .main-info {
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            max-width: 315px;
+        }
+    }
+
+    // news
+    .main-news__item_2 {
+        display: none;
+    }
+    .news__item {
+        width: 100%;
+    }
+
+    .main-news__top {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .more-news_desktop {
+        display: none;
+    }
+
+    .more-news_mobile {
+        display: block;
+        margin-top: 20px;
+    }
+
+    // contacts
+    .main-contacts__container {
+        flex-direction: column-reverse;
+    }
+    .main-contacts {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .main-contacts__heading {
+        font-size: 2.25rem;
+    }
+    .contacts__form {
+        padding: 86px 10px 130px 10px;
+    }
+    .contacts__form-heading {
+        margin: 0 0 10px 0;
+        text-align: center;
+        font-size: 1.125rem;
+    }
+    .contacts__form-btn {
+        width: 100%;
+    }
+    .main-contacts__gyro {
+        right: 2%;
+        top: -120px;
+        max-width: 83px;
+    }
+    .main-contacts__bycicle {
+        bottom: -210px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contacts__form {
+        min-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 379px) {
+    .input {
+        margin-bottom: 5px;
+    }
+    .textarea {
+        margin-bottom: 5px;
+    }
+}

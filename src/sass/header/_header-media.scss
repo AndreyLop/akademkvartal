@@ -1,0 +1,52 @@
+@media screen and (max-width: 1199px) {
+
+    .academ_logo {
+        top: -115px;
+        left: -20px;
+        img {
+            width: 198px;
+        }
+    }
+
+    .header-nav__phone {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-nav__phone {
+        padding-left: 0;
+        margin-right: 10px;
+        background: none;
+    }
+    .header-nav__lang {
+        margin-right: 1%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .academ_logo {
+        top: -90px;
+        img {
+            width: 150px;
+        }
+    }
+    .header-nav__phone {
+        display: none;
+    }
+    .header-nav__call-btn {
+        margin-right: 10px;
+        .btn {
+            min-width: auto;
+            max-width: 100px;
+            line-height: 14px;
+            padding: 12px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-nav__menu-text {
+        display: none;
+    }
+}

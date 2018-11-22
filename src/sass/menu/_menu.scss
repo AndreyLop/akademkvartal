@@ -1,0 +1,193 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: #a2107b; /* Old browsers */
+    background: -moz-linear-gradient(top, #a2107b 0%, #1a70c5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a2107b 0%,#1a70c5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a2107b 0%,#1a70c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2107b', endColorstr='#1a70c5',GradientType=0 ); /* IE6-9 */
+    z-index: 10;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: opacity 1s, transform 0s 1s;
+    overflow-y: auto;
+    font-weight: 500;
+
+    &.menu__open {
+        transform: translateY(0);
+        opacity: 1;
+        transition: opacity 1s;
+    }
+}
+
+.menu_top {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    position: relative;
+}
+
+.menu__logo {
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+
+.menu__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 145px;
+}
+
+.menu__close-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.menu__btn_close {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: relative;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 35px;
+        height: 1px;
+        background-color: #fff;
+        transition: .7s;
+    }
+    &::before {
+        transform: translateX(-50%) rotateZ(45deg)
+    }
+    &::after {
+        transform: translateX(-50%) rotateZ(-45deg)
+    }
+
+    &:hover {
+        &::before {
+            transform: translateX(-50%) rotateZ(-45deg)
+        }
+        &::after {
+            transform: translateX(-50%) rotateZ(45deg)
+        }
+    }
+}
+
+.menu__inner-bg {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/common/menu__bg.png');
+}
+
+//Center part
+.menu__center {
+    margin-top: 55px;
+}
+.menu__list_1 {
+    width: 100%;
+    display: flex;
+}
+
+.menu__list-heading {
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+    text-transform: uppercase;
+}
+
+.menu__list_2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__list_2-item {
+    width: 24%;
+    li {
+        font-size: 0.875rem;
+        line-height: 36px;
+    }
+    a {
+        transition: color 0.5s;
+        position: relative;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 0%;
+            height: 1px;
+            background-color: $orange;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width 0.5s;
+        }
+        &:hover {
+            color: $orange;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.menu__list_2-item_4 {
+    .menu__list_subheading {
+        margin-top: 70px;
+    }
+
+    .menu__list_subheading_2 {
+        margin-top: 20px;
+    }
+}
+
+
+.menu__list_subheading {
+    color: #b2b2b2;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.menu__list_subheading_2 {
+    margin-top: 20px;
+}
+.menu__list_subheading_3 {
+    margin-top: 56px;
+}
+.menu__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+.menu__phone {
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 500;
+    padding-left: 35px;
+    margin-right: 34px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-image: url('../img/main/phone_icon.png'); 
+}
+
+.menu__bottom-logo {
+    margin-bottom: 30px;
+}
